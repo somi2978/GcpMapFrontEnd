@@ -1,0 +1,494 @@
+.Home .LeftSide .SearchPart .SearchLocation div{
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Home .LeftSide .SearchPart .SearchLocation div > *{
+    pointer-events: none;
+}
+
+.Home .gm-style-iw, .Home .gm-style-iw-tc{
+    display: none;
+}
+
+/* pc */
+.Home .Home_PC .LeftSide{
+    padding: 0 20px 0 20px;
+    width: 360px;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    position: relative;
+}
+
+/* 서치파트 */
+.Home .Home_PC .LeftSide .SearchNode{
+    position: sticky;
+    top: 0;
+    background-color: var(--mainBackgroundcolor);
+    z-index: 998;
+}
+
+.Home .Home_PC .LeftSide .Search{
+    margin: 20px 0 10px 0;
+    border: 3px solid var(--mainWidgetcolor);
+    border-radius: 10px;
+    padding: 4px 10px;
+    height: 28px;    
+}
+
+.Home .Home_PC .LeftSide .Search input{
+    border-width: 0px;
+}
+
+.Home .Home_PC .LeftSide .Search i{
+    cursor: pointer;
+}
+
+/* 메인파트 */
+.Home .Home_PC .LeftSide .MainPart .Title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentTab > div{
+    height: 40px;
+    background-color: var(--mainWidgetcolor2);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentTab > div.active{
+    height: 50px;
+    background-color: var(--mainBackgroundcolor);
+    font-size: 16px;
+    border: 1px solid var(--mainWidgetcolor);
+    position: relative;
+    cursor: default;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentTab > div.active::after{
+    content: "";
+    position: absolute;
+    top: 49px; left: 0;
+    width: 100%; height: 2px; 
+    background-color: var(--mainBackgroundcolor);
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentPosts, .Home .Home_PC .LeftSide .MainPart .RecentPart .RecentRequest{
+    padding: 20px 10px 0 10px;
+    display: none;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentPosts.active, .Home .Home_PC .LeftSide .MainPart .RecentPart .RecentRequest.active{
+    display: flex;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentPosts .PostsBars{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentPosts .PostsBars p:first-child{
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Home .Home_PC .LeftSide .MainPart .RecentPart .RecentPosts .PostsBars img{
+    width: 25px;
+    height: 25px;
+}
+
+.Home .Home_PC .LeftSide .SearchPart .SearchPosts{
+    margin: 10px 0;
+}
+
+.Home .Home_PC .LeftSide .SearchPart .SearchPosts .PostsBars{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Home .Home_PC .LeftSide .SearchPart .SearchPosts .PostsBars p:first-child{
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Home .Home_PC .LeftSide .SearchPart .SearchPosts .PostsBars img{
+    width: 25px;
+    height: 25px;
+}
+
+/* 개별파트 */
+.Home .Home_PC .LeftSide .PostsContext{
+    position: fixed;
+    top: 90px; bottom: 0; left: 0;
+    width: 360px;
+    padding: 20px;
+    background-color: var(--mainBackgroundcolor);
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.Home .Home_PC .LeftSide p{
+    margin: 10px 0;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .Title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .Types img{
+    width: 25px; height: 25px;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .ButtonForm1{
+    padding: 0 15px;
+    border-radius: 10px; 
+    height: 40px;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .PostsSide .PostControll{
+    position: relative;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .PostsSide .PostControll .PostsDel{
+    position: absolute;
+    right: 0px; top: 50px;
+    width: 300px; height: 20px;
+    align-items: center;
+    background-color: var(--mainWidgetcolor);
+    padding : 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .PostsSide .PostControll{
+    cursor: pointer;
+    color: white;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .PostsSide .PostControll i{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .PostsSide .PostControll .AlertNode{
+    position: absolute;
+    right: 0px; top: 50px;
+    width: 300px;
+    align-items: center;
+    background-color: var(--mainWidgetcolor);
+    padding : 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide{
+    margin-top: 20px;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide li{
+    position: relative;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide li pre{
+    margin: 0 0 10px 0;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide li .ButtonForm2{
+    height: 10px; align-items: center; justify-content: center;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide .CommentDel{
+    position: absolute;
+    left: 10px; top: 30px;
+    width: 300px; height: 20px;
+    align-items: center;
+    background-color: var(--mainWidgetcolor);
+    padding : 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide .CommentDel div{
+    cursor: pointer;
+    color: white;
+}
+
+.Home .Home_PC .LeftSide .PostsContext .CommentSide .CommentDel i{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+/* 지도파트 */
+.Home .Home_PC .RightSide{
+    background-color: var(--mainBackgroundcolor);
+    position: relative;
+}
+
+.Home .Home_PC .RightSide .CurrentLation{
+    position: absolute;
+    top: 10px; left: auto; right: 65px;
+    font-size: 20px;
+    color: white;
+    z-index: 996;
+    cursor: pointer;
+}
+
+.Home .Home_PC .RightSide .MapNotice{
+    position: absolute;
+    top: 10px; left: 170px;
+    font-size: 16px;
+    color: var(--mainWidgetcolor);
+    border: 2px solid var(--mainWidgetcolor);
+    padding: 6px 10px;
+    background-color: rgba(255,255,255,1);
+    font-weight: bold;
+    opacity: 80%;
+    z-index: 996;
+    cursor: default;
+}
+
+/* mobile */
+.Home .Home_MB .LeftSide{
+    position: relative;
+}
+
+.Home .Home_MB .LeftSide .SearchNode {
+    padding: 0 20px;
+}
+
+.Home .Home_MB .LeftSide .MainPart, .Home .Home_MB .LeftSide .SearchPart {
+    padding: 0 20px 50px 20px;
+}
+
+/* 서치파트 */
+.Home .Home_MB .LeftSide .SearchNode{
+    background-color: var(--mainBackgroundcolor);
+}
+
+.Home .Home_MB .LeftSide .Search{
+    margin: 20px 0 10px 0;
+    border: 3px solid var(--mainWidgetcolor);
+    border-radius: 10px;
+    padding: 4px 10px;
+    height: 28px;    
+}
+
+.Home .Home_MB .LeftSide .Search input{
+    border-width: 0px;
+}
+
+.Home .Home_MB .LeftSide .Search i{
+    cursor: pointer;
+}
+
+/* 메인파트 */
+.Home .Home_MB .LeftSide .MainPart .Title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentTab > div{
+    height: 40px;
+    background-color: var(--mainWidgetcolor2);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentTab > div.active{
+    height: 50px;
+    background-color: var(--mainBackgroundcolor);
+    font-size: 16px;
+    border: 1px solid var(--mainWidgetcolor);
+    position: relative;
+    cursor: default;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentTab > div.active::after{
+    content: "";
+    position: absolute;
+    top: 49px; left: 0;
+    width: 100%; height: 2px; 
+    background-color: var(--mainBackgroundcolor);
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentPosts, .Home .Home_MB .LeftSide .MainPart .RecentPart .RecentRequest{
+    padding: 20px 10px 0 10px;
+    display: none;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentPosts.active, .Home .Home_MB .LeftSide .MainPart .RecentPart .RecentRequest.active{
+    display: flex;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentPosts .PostsBars{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentPosts .PostsBars p:first-child{
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Home .Home_MB .LeftSide .MainPart .RecentPart .RecentPosts .PostsBars img{
+    width: 25px;
+    height: 25px;
+}
+
+.Home .Home_MB .LeftSide .SearchPart .SearchPosts{
+    margin: 10px 0;
+}
+
+.Home .Home_MB .LeftSide .SearchPart .SearchPosts .PostsBars{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Home .Home_MB .LeftSide .SearchPart .SearchPosts .PostsBars p:first-child{
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Home .Home_MB .LeftSide .SearchPart .SearchPosts .PostsBars img{
+    width: 25px;
+    height: 25px;
+}
+
+/* 개별파트 */
+.Home .Home_MB .LeftSide .PostsContext{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    padding: 20px;
+    background-color: var(--mainBackgroundcolor);
+}
+
+.Home .Home_MB .LeftSide p{
+    margin: 10px 0;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .Title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .Types img{
+    width: 25px; height: 25px;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .ButtonForm1{
+    padding: 0 15px;
+    border-radius: 10px; 
+    height: 40px;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .PostsSide .PostControll{
+    position: relative;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .PostsSide .PostControll .PostsDel{
+    position: absolute;
+    top: 110%; right: 0; left: auto;
+    min-width: 240px; height: 20px;
+    align-items: center;
+    background-color: var(--mainWidgetcolor);
+    padding : 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .PostsSide .PostControll{
+    cursor: pointer;
+    color: white;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .PostsSide .PostControll i{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .PostsSide .PostControll .AlertNode{
+    position: absolute;
+    top: 110%; right: 0; left: auto;
+    width: 300px;
+    align-items: center;
+    background-color: var(--mainWidgetcolor);
+    padding : 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide{
+    padding : 30px 0;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide li{
+    position: relative;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide li pre{
+    margin: 0 0 10px 0;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide li .ButtonForm2{
+    height: 10px; align-items: center; justify-content: center;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide .CommentDel{
+    position: absolute;
+    left: 10px; top: 30px;
+    width: 300px; height: 20px;
+    align-items: center;
+    background-color: var(--mainWidgetcolor);
+    padding : 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide .CommentDel div{
+    cursor: pointer;
+    color: white;
+}
+
+.Home .Home_MB .LeftSide .PostsContext .CommentSide .CommentDel i{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+/* 지도파트 */
+.Home .Home_MB .RightSide{
+    background-color: var(--mainBackgroundcolor);
+    position: relative;
+}
+
+.Home .Home_MB .RightSide .CurrentLation{
+    position: absolute;
+    top: 10px; left: auto; right: 65px;
+    font-size: 20px;
+    color: white;
+    z-index: 996;
+    cursor: pointer;
+}
+
+.Home .Home_MB .MapNotice{
+    font-size: 14px;
+    background-color: var(--mainWidgetcolor);
+    border: 2px solid var(--mainWidgetcolor);
+    padding: 10px;
+    color : var(--mainBackgroundcolor);
+    font-weight: bold;
+}

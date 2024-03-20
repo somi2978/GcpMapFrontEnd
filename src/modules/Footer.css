@@ -1,0 +1,17 @@
+@media only screen and (max-width: 900px) {
+    .Footer_PC{
+        display: none;
+    }
+    .Footer_MB{
+        display: flex;
+    }
+    }
+
+    @media only screen and (min-width: 901px) {
+    .Footer_PC{
+        display: flex;
+    }
+    .Footer_MB{
+        display: none;
+    }
+}

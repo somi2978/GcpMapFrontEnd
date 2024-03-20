@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --mainBackgroundcolor : #ffffff;
+  --mainWidgetcolor : #ff9100;
+  --mainWidgetcolor3 : #ff9100;
+  --mainWidgetcolor2 : #ffcb87;
+  --mainFontcolor : #131313;
+  --mainDurationColor : #949494;
+}
+
+html, body{
+  margin: 0;
+  padding : 0;
+  background-color: var(--mainBackgroundcolor);
+  color : var(--mainFontcolor);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.KOTRA {
+  font-family: 'SBAggroB', sans-serif; /* 원하는 요소에 폰트 적용 */
+}
+
+.con{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+ul, li, a{
+  color: inherit;
+  text-decoration: none;
+  margin: 0; padding: 0;
+}
+
+.Top-Menu-Fix {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top : 0;
+  z-index: 997;
+}
+
+/* button */
+.ButtonForm1{
+  border-radius: 2px;
+  background-color: var( --mainWidgetcolor);
+  color: var(--mainBackgroundcolor);
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
+  border: 0px solid;
+}
+
+.ButtonForm2{
+  border-radius: 4px;
+  background-color: var( --mainWidgetcolor);
+  color: var(--mainBackgroundcolor);
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  border: 0px solid;
+}
+
+.ButtonForm3{
+  border-radius: 6px;
+  background-color: var( --mainWidgetcolor);
+  color: var(--mainBackgroundcolor);
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border: 0px solid;
+}
+
+.InputRound{
+  border-radius: 10px;
+  border: 2px solid var(--mainWidgetcolor);
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+.InputRound2{
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid var(--mainWidgetcolor);
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+.Pin{
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+}

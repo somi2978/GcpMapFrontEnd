@@ -1,0 +1,138 @@
+.Menu{
+    background-color: var(--mainBackgroundcolor);
+    z-index: 999;
+    color: var(--mainWidgetcolor);
+}
+
+/* pc */
+.Menu_PC{
+    height: 90px;
+}
+
+.Menu_PC i{
+    cursor: pointer;
+}
+
+.Menu_PC .Logo {
+    padding: 0 0 0 30px;
+    width: 370px;
+}
+
+.Menu_PC .Logo img{
+    height: 60px;
+}
+
+.Menu_PC .RightSide .MenuCons{
+    padding: 0 30px 0 0;
+    font-size: 28px;
+}
+
+.Menu_PC .RightSide{
+    position: relative;
+}
+
+.Menu_PC .RightSide .MenuSide i:hover{
+    font-weight: bold;
+}
+
+.Menu_PC .RightSide .MenuSide{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: auto;
+    width: 0px; height: calc(100vh - 60px);
+    background-color: var(--mainBackgroundcolor);
+    padding: 30px;
+    font-size: 24px;
+    border-left: 4px solid var(--mainWidgetcolor);
+    display: none;
+    z-index: 999;
+}
+
+.Menu_PC .RightSide .MenuSide.active{
+    display: flex;
+    width: 300px;
+}
+
+.Menu_PC .RightSide .MenuSide ul li:hover{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+/* mobile */
+.Menu_MB{
+    height: 80px;
+}
+
+.Menu_MB .Logo{
+    padding: 0 0 0 20px;
+}
+
+.Menu_MB .MenuCons{
+    padding: 0 30px 0 0;
+}
+
+.Menu_MB i{
+    cursor: pointer;
+}
+
+.Menu_MB .Logo img{
+    height: 50px;
+}
+
+.Menu_MB .RightSide .MenuCons{
+    font-size: 28px;
+}
+
+.Menu_MB .RightSide{
+    position: relative;
+}
+
+.Menu_MB .RightSide .MenuSide{
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: auto;
+    overflow-y : auto;
+    width: 0px; height: calc(100vh - 60px);
+    background-color: var(--mainBackgroundcolor);
+    padding: 30px;
+    font-size: 24px;
+    border-left: 4px solid var(--mainWidgetcolor);
+    display: none;
+    z-index: 999;
+    transition: 1s;
+}
+
+.Menu_MB .RightSide .MenuSide.active{
+    display: flex;
+    width: 70vw;
+}
+
+.Menu_MB .RightSide .MenuSide ul li{
+    font-weight: bold;
+}
+
+.Menu_MB .RightSide .MenuSide .MenuMember {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 2px solid var(--mainWidgetcolor);
+    border-bottom: 2px solid var(--mainWidgetcolor);
+    margin: 20px 0 30px 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .Menu_PC{
+        display: none;
+    }
+    .Menu_MB{
+        display: flex;
+    }
+    }
+
+    @media only screen and (min-width: 901px) {
+    .Menu_PC{
+        display: flex;
+    }
+    .Menu_MB{
+        display: none;
+    }
+}
